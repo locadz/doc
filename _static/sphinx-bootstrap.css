@@ -1,0 +1,43 @@
+@import "bootstrap.css";
+
+a {
+    color: #0E84B5;
+}
+
+a:hover, .nav a:hover {
+    color: #f26a1e;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: 'Crete Round', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-bottom: .3em;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+a.headerlink {
+    visibility: hidden;
+}
+
+h1:hover > a.headerlink,
+h2:hover > a.headerlink,
+h3:hover > a.headerlink,
+h4:hover > a.headerlink,
+h5:hover > a.headerlink,
+h6:hover > a.headerlink,
+dt:hover > a.headerlink {
+    visibility: visible;
+}
+
+a.headerlink {
+    color: #aeaeae;
+    text-decoration: none;
+}
+
+a.headerlink:hover {
+    color: #0E84B5;
+}
