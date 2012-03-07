@@ -28,6 +28,8 @@ the rest of world. By localizing advertising solutions, you can maximize your ad
 Terminology
 -----------
 
+.. _`Ad Unit`:
+
 Ad Unit
 ^^^^^^^
 
@@ -51,4 +53,5 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   android/index.rst
    faq.rst
