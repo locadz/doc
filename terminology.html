@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type"
           content="text/html; charset=utf-8"/>
     
-        <title>Introduction &mdash; Locadz 1.0.0 documentation</title>
+        <title>Terminology &mdash; Locadz 1.0.0 documentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="_static/sphinx-bootstrap.css" type="text/css"/>
@@ -28,8 +28,9 @@
                     src="_static/underscore.js"></script>
             <script type="text/javascript"
                     src="_static/doctools.js"></script>
-        <link rel="top" title="Locadz 1.0.0 documentation" href="#"/>
-            <link rel="next" title="Terminology" href="terminology.html"/> 
+        <link rel="top" title="Locadz 1.0.0 documentation" href="index.html"/>
+            <link rel="next" title="Locadz Android SDK Setup" href="android/index.html"/>
+            <link rel="prev" title="Introduction" href="index.html"/> 
     <script type="text/javascript"
             src="https://apis.google.com/js/plusone.js"></script>
 </head>
@@ -42,14 +43,18 @@
     <div class="related">
         <ul class="nav">
                 <li><a class="brand"
-                       href="#">Locadz</a></li>
+                       href="index.html">Locadz</a></li>
                 <li>
                     <a href="genindex.html"
                        title="General Index" accesskey="I">index</a>
                 </li>
                 <li>
-                    <a href="terminology.html"
-                       title="Terminology" accesskey="N">next</a>
+                    <a href="android/index.html"
+                       title="Locadz Android SDK Setup" accesskey="N">next</a>
+                </li>
+                <li>
+                    <a href="index.html"
+                       title="Introduction" accesskey="P">previous</a>
                 </li> 
         </ul>
     </div>
@@ -70,49 +75,23 @@
         <div class="content row">
                 <div class="span9">
                     
-  <div class="section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p>Locadz is the location-aware advertising platform for your mobile app.</p>
-<p>The first time a mobile developer integrates the advertising platform into his app. Usually the developer will
-go with the dominant global solution providers like Google AdMob or Apple iAd. These global solution providers
-serves advertisements in major markets, but they may not pay you as much as you expected.</p>
-<p>And there are domestic niche market players who pay 2 to 5 times more than the global providers do. But the problem
-is, if an end user is outside the service area, its traffic are wasted, Niche market provider couldn&#8217;t display any
-relevant ad to this user.</p>
-<p>And then the developer may adopt ad rotation tools like AdWhirl. These ad rotation tools split ad traffic. For example,
-50% of traffic will go to global provider and the other 50% will go to niche market player. But this isn&#8217;t solve the
-fundamental problem. Still, the end user isn&#8217;t able to see any relevant ad half of the time.</p>
-<p>This is why we create Locadz, the location-aware advertising platform. Locadz allows you to customize the advertisement
-provider by location. For example, you can use VPON and domob in China market, adonic in european market, and adMob for
-the rest of world. By localizing advertising solutions, you can maximize your ad revenue.</p>
-<p>Contents:</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="terminology.html">Terminology</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="terminology.html#ad-unit">Ad Unit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="terminology.html#adunitid">AdUnitId</a></li>
-<li class="toctree-l2"><a class="reference internal" href="terminology.html#adbroker">AdBroker</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="android/index.html">Locadz Android SDK Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="android/index.html#import-sdk-library">1. Import SDK Library</a></li>
-<li class="toctree-l2"><a class="reference internal" href="android/index.html#import-ad-broker-sdk-libraries">2. Import Ad Broker SDK Libraries</a></li>
-<li class="toctree-l2"><a class="reference internal" href="android/index.html#assign-traffic-to-ad-brokers">3. Assign Traffic to Ad Brokers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="android/index.html#permissions">4. Permissions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="android/index.html#setup-adunitlayout">5. Setup AdUnitLayout</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#why-locadz">Why Locadz</a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#what-kind-of-ad-does-locadz-support">What Kind of AD does Locadz Support</a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#will-locadz-support-house-ad">Will Locadz Support House AD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#android-sdk">Android SDK</a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#ios-sdk">IOS SDK</a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#which-ad-brokers-are-supported">Which Ad Brokers are supported?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#does-locadz-support-my-local-ad-broker">Does Locadz Support My Local Ad Broker</a></li>
-</ul>
-</li>
-</ul>
+  <div class="section" id="terminology">
+<h1>Terminology<a class="headerlink" href="#terminology" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ad-unit">
+<span id="id1"></span><h2>Ad Unit<a class="headerlink" href="#ad-unit" title="Permalink to this headline">¶</a></h2>
+<p>A defined space within an application that has been reserved for the display of advertising. You may define multiple Ad
+Units on a single application or screen. For example, one on the top of the screen, one on the bottom of the screen and
+another one for the splash screen.</p>
+<p>AdUnits are identified by AdUnitId.</p>
+</div>
+<div class="section" id="adunitid">
+<span id="adunit-id"></span><h2>AdUnitId<a class="headerlink" href="#adunitid" title="Permalink to this headline">¶</a></h2>
+<p>The unique identifier for AdUnit. Do not share your ID with others.</p>
+</div>
+<div class="section" id="adbroker">
+<span id="ad-broker"></span><h2>AdBroker<a class="headerlink" href="#adbroker" title="Permalink to this headline">¶</a></h2>
+<p>The middle man between advertisers and publishers/application developers. Ad Brokers aggregate a large
+number of advertisements and allow publishers to put these advertisements to their website or application for fee.</p>
 </div>
 </div>
 
@@ -126,9 +105,22 @@ the rest of world. By localizing advertising solutions, you can maximize your ad
                     
         <div class="sphinxsidebar">
             <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Terminology</a><ul>
+<li><a class="reference internal" href="#ad-unit">Ad Unit</a></li>
+<li><a class="reference internal" href="#adunitid">AdUnitId</a></li>
+<li><a class="reference internal" href="#adbroker">AdBroker</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Introduction</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="terminology.html"
-                        title="next chapter">Terminology</a></p>
+  <p class="topless"><a href="android/index.html"
+                        title="next chapter">Locadz Android SDK Setup</a></p>
             </div>
         </div>
                 </div>
@@ -154,7 +146,7 @@ the rest of world. By localizing advertising solutions, you can maximize your ad
 
     <!-- disqus -->
     <script type="text/javascript">
-        var disqus_title = 'Introduction &mdash; Locadz 1.0.0 documentation';
+        var disqus_title = 'Terminology &mdash; Locadz 1.0.0 documentation';
         var disqus_identifier ='code' + '.' + "locadz" + window.location.pathname.replace('/', '.');
     </script>
 
