@@ -11,7 +11,7 @@ Locadz is the location-aware advertising platform for your mobile app.
 
 The first time a mobile developer integrates the advertising platform into his app. Usually the developer will
 go with the dominant global solution providers like Google AdMob or Apple iAd. These global solution providers
-servers advertisements in major markets, but they may not pay you as much as you expected.
+serves advertisements in major markets, but they may not pay you as much as you expected.
 
 And there are domestic niche market players who pay 2 to 5 times more than the global providers do. But the problem
 is, if an end user is outside the service area, its traffic are wasted, Niche market provider couldn't display any
@@ -25,27 +25,7 @@ This is why we create Locadz, the location-aware advertising platform. Locadz al
 provider by location. For example, you can use VPON and domob in China market, adonic in european market, and adMob for
 the rest of world. By localizing advertising solutions, you can maximize your ad revenue.
 
-Terminology
------------
 
-.. _`Ad Unit`:
-
-Ad Unit
-^^^^^^^
-
-A defined space within an application that has been reserved for the display of advertising. You may define multiple Ad
-Units on a single application or screen. For example, one on the top of the screen, one on the bottom of the screen and
-another one for the splash screen.
-
-AdUnits are identified by AdUnitId.
-
-AdUnitId
-^^^^^^^^
-
-The unique identifier for AdUnit. Do not share your ID with others.
-
-AdBroker
-^^^^^^^^
 
 
 Contents:
@@ -53,5 +33,6 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   terminology.rst
    android/index.rst
    faq.rst
